@@ -1,23 +1,77 @@
 body{
-    background-image: url("../images/background11.jpg");
-    background-size: 98%;
+    background-image: url("../images/background8.jpg");
+    background-size: cover;
  
 
 }
 .anime-btn{
-    border-radius: 50%;
+    border:none;
     margin: 1%;
+    font-family: 'Acme', sans-serif;
+    color: white;
+    background: transparent
+  
+}.anime-btn:hover{
+    border:2px solid silver ;
+border-radius: 100%;
+margin: 0%;
 }
 #addGif{
-    border-radius: 50%;
-    margin: 2% 0% 0% 10%;
+   border: none;
+    margin: 2% 0% 0% 10%; 
+    font-family: 'Acme', sans-serif;
+    background: transparent;
+    color: white;
+    float: right
+}#addGif:hover{
+    border:2px solid silver ;
+border-radius: 50%;
+
 }
+
 img{
     height: 100px;
     width: 100px;
     border-radius:50px;
-    position: absolute;
+    position: sticky;
 	
-	margin: 1px;
+    margin: 6px;
+    -webkit-animation-name: image;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+   
 }
+
+.anime{
+    float: left;        
+}
+#gifInput{
+    font-size: 30px;
+        font-family: 'Sacramento', cursive;
+    color:white;
+    background: transparent;
+    border-radius: 20%;
+
+}
+p{
+   /* font-family: 'Bowlby One SC', cursive;*/
+   font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50%;
+    border: solid 2px silver;
+    padding: 5px;
+
+}
+@-webkit-keyframes image{
+    from { border-color: #9a0202; -webkit-box-shadow: 0 0 20px rgb(255, 157, 0); }
+    50% { border-color: #fffb00; -webkit-box-shadow: 0 0 40px #ff0000; }
+    to { border-color: #e5ff00; -webkit-box-shadow: 0 0 20px rgb(179, 255, 0); }
+  }
+  @media sreen and (max-width:520px)
+  {#addGif{
+      float: left;
+  }
+
+  }
 
