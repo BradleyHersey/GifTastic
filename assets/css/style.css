@@ -1,8 +1,7 @@
 body{
-    background-image: url("../images/background8.jpg");
+    background: url("../images/background8.jpg") no-repeat center center fixed;
     background-size: cover;
- 
-
+    height: 100%;
 }
 .anime-btn{
     border:none;
@@ -16,13 +15,21 @@ body{
 border-radius: 100%;
 margin: 0%;
 }
-#addGif{
+#fGif{
+    border: none;
+     margin: 2% 0% 0% 10%; 
+     font-family: 'Acme', sans-serif;
+     background: transparent;
+     color: white;
+     float: right
+ }
+#addGif {
    border: none;
     margin: 2% 0% 0% 10%; 
     font-family: 'Acme', sans-serif;
     background: transparent;
     color: white;
-    float: right
+    float: right;
 }#addGif:hover{
     border:2px solid silver ;
 border-radius: 50%;
@@ -48,9 +55,10 @@ img{
 #gifInput{
     font-size: 30px;
         font-family: 'Sacramento', cursive;
-    color:white;
+    color:red;
     background: transparent;
     border-radius: 20%;
+    background-color: black;
 
 }
 p{
@@ -61,6 +69,7 @@ p{
     border-radius: 50%;
     border: solid 2px silver;
     padding: 5px;
+    background: black;
 
 }
 @-webkit-keyframes image{
@@ -71,7 +80,9 @@ p{
   @media sreen and (max-width:520px)
   {#addGif{
       float: left;
+     position: absolute;
   }
 
   }
+ 
 
