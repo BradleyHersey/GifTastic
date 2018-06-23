@@ -2,6 +2,8 @@ body{
     background: url("../images/background8.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
+     background-repeat: no-repeat;
+    background-attachment: fixed;	
 }
 .anime-btn{
     border:none;
@@ -9,6 +11,7 @@ body{
     font-family: 'Acme', sans-serif;
     color: white;
     background: transparent
+	    
   
 }.anime-btn:hover{
     border:2px solid silver ;
